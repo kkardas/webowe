@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+
+	<title>JQuery w Akcji</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script>
+        $(document).ready(function(){
+            $("#styleButton").click(function(){
+                $(".poza").toggleClass('pozaN');
+            });
+        });
+	</script>
+</head>
+<body>
+  <script src="methods.js"></script>
+
+  <button id="styleButton">Change style button</button>
+
+  <div class="container">
+    <h1> PAW - strona testowa dla JQuery</h1>
+	
+	<ul>
+	   <li>
+	       Ameryka
+		   <ul id="ameryka">
+		      <li class="course" style="background-color:#fcff00;"/>  USA
+			  <img src="pic1.jpg">
+			  <p>
+				  Lorum ipsem
+			  </p>
+			  </li>
+			  
+			  <li class="course">  Kanada
+			  <img src="pic2.jpg">
+			  <p>
+				  Lorum ipsem
+			  </p>
+			  </li>
+		      
+			  <li class="course">  Meksyk
+			  <img src="pic3.jpg">
+			  <p>
+				  Lorum ipsem
+			  </p>
+			  </li>
+		  </ul>
+	   </li>
+
+		<li>
+	      Europa 
+		  <ul id="europa">
+		      <li class="course"  style="background-color:#fcff00;"/>  Polska
+			  <img src="cat1.jpg">
+				  <p>
+					  Lorum ipsem
+				  </p>
+			  </li>
+			  <li class="course"> Niemcy 
+			  <img src="cat1.jpg">
+				  <p>
+					  Lorum ipsem
+				  </p>
+			  </li>
+		      <li class="course">   Francja 
+			  <img src="cat1.jpg">
+				  <p>
+					  Lorum ipsem
+				  </p>
+			  </li>
+		  </ul>
+	   </li>
+	   
+	   <li> 
+	       Azja
+		   <ul id="azja">
+		      <li class="course"  style="background-color:#fcff00;"/>  Japonia
+			  <img src="cat1.jpg">
+				  <p>
+					  Lorum ipsem
+				  </p>
+			  
+			  </li>
+			  <li class="course">  Chiny 
+			  <img src="cat2.jpg">
+				  <p>
+					  Lorum ipsem
+				  </p>
+			  </li>
+		  </ul>
+	   </li>
+	
+	</ul>
+	
+	<p id="pierwszy" class="poza">
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+	  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p id="drugi" class="poza">
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+	  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p id="trzeci" class="poza">
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+	  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+		
+		<img src="pic1.jpg">
+		
+		<img src="pic5.jpg">
+		
+		
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
