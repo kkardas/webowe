@@ -1,0 +1,53 @@
+#timer {
+    width: 90%;
+    margin: 10px auto;
+    height: 22px;
+    background-color: #0A5F44;
+}
+
+.tim {
+    height: 100%;
+    text-align: right;
+    width: 100%;
+    padding: 0 10px;
+    line-height: 22px;
+    background-color: #CBEA00;
+    box-sizing: border-box;
+}
+
+#podsumowanie {
+    display: none;
+}
+
+body {
+    font:italic bold 12px/30px Georgia;
+}
+
+head {
+    font:italic bold 12px/30px Georgia, serif;
+}
+
+#nrPytania {
+    color: black;
+}
+
+.btn-primary {
+    margin-bottom: 10px;
+}
+
+/*.progress-bar .progress-bar-warning {*/
+    /*vertical-align: middle;*/
+    /*background-color: grey;*/
+    /*border-style: solid;*/
+    /*color: black;*/
+/*}*/
+
+.progress-bar-success {
+    border-style: solid;
+    color: black
+}
+
+.progress-bar-danger {
+    border-style: solid;
+    color: black
+}

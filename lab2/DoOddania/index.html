@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <h1>Quiz - 20 sekund na odpowiedź</h1>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="odpowiedz.js"></script>
+        <script src="timer.js"></script>
+        <script src="podsumowanie.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <p>Udzielone odpowiedzi<br></p>
+        <div class="progress" id="progress" style="width: 80%; margin: auto;">
+
+        </div>
+    </head>
+    <body>
+        <div class="sekcja" id="pytania">
+            <p>Pozostały czas:<br></p>
+            <div id="timer">
+                <div class="tim">20</div>
+            </div>
+            <div class="pytanie">
+                Pytanie
+                <a id="nrPytania"></a><br>
+                <a class="odp" id="odpA">
+                    Odpowiedź A:
+                    <button class="btn btn-primary" id="p1"></button><br>
+                </a>
+                <a class="odp" id="odpB">
+                    Odpowiedź B:
+                    <button class="btn btn-primary" id="p2"></button><br>
+                </a>
+                <a class="odp" id="odpC">
+                    Odpowiedź C:
+                    <button class="btn btn-primary" id="p3"></button><br>
+                </a>
+                <a class="odp" id="odpD">
+                    Odpowiedź D:
+                    <button class="btn btn-primary" id="p4"></button><br>
+                </a>
+            </div>
+        </div>
+        <div class="sekcja" id="podsumowanie">
+            Podsumowanie quizu:<br>
+
+        </div>
+    </body>
+</html>
