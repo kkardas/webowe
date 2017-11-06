@@ -1,0 +1,42 @@
+<div class="main">
+  <img [src]="iRower.getObraz()">
+  <table id="tab" class="table table-striped">
+    <tbody>
+      <tr class="well wellEv">
+        {{iRower.getName() | uppercase}}<br>
+      </tr>
+      <tr class="well wellOdd">
+        Cena: {{iRower.getCena() | currency:'USD':'true'}}
+      </tr>
+      <tr class="well wellEv" *ngIf="iRower.sprawdzDostepnosc(); else BrakNaStanie">
+          Ilosc w magazynie: {{iRower.getIlosc()}}
+      </tr>
+      <ng-template class="brak" style="background-color: orange" #BrakNaStanie>
+        <tr class="well wellWarn">
+          Jest niedostępny
+        </tr>
+      </ng-template>
+      <tr class="well wellOdd">
+        Opis: {{iRower.getDesc()}}
+      </tr>
+      <tr class="well wellEv">
+        <p>
+          Ilość zamówionej pozycji:
+          <input type="number" value="{{getIloscZamowionych()}}" readonly="readonly">
+          <span [hidden]="getHidePrzyciskMinus()">
+            <button type="button" class="btn btn-primary"
+                    (click)="zmniejszZamowienie()">
+                -
+            </button>
+          </span>
+          <span [hidden]="getHidePrzyciskPlus()">
+            <button type="button" class="btn btn-primary"
+                    (click)="zwiekszZamowienie()">
+                +
+            </button>
+          </span>
+        </p>
+      </tr>
+    </tbody>
+  </table>
+</div>

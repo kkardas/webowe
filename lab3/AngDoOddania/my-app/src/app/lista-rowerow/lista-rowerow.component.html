@@ -1,0 +1,19 @@
+<body class="parallax">
+  <div  *ngIf="wiecejNizDziesiec(); else MniejNizDziesiec">
+    <span id="wiecej" class="well well-sm">
+      W magazynie jest {{iloscRowerowWMagazynie}} rowerów
+    </span>
+  </div>
+  <ng-template #MniejNizDziesiec>
+    <span id="mniej" class="well well-sm">
+      W magazynie jest {{iloscRowerowWMagazynie}} rowerów
+    </span>
+  </ng-template>
+  <h2>Lista rowerów: </h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let rower of rowery">
+      <app-rower [iRower]="rower">
+      </app-rower>
+    </li>
+  </ul>
+</body>

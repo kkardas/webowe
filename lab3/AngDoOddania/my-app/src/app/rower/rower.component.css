@@ -1,0 +1,65 @@
+div {
+  font-family: "Georgia", serif;
+  font-size: larger;
+}
+
+img {
+  float: right;
+  margin-right: 35%;
+}
+
+.main {
+  height: 300px;
+}
+
+#tab {
+  width: 30%;
+}
+
+.table tbody tr.wellWarn {
+  background-color: orange;
+}
+
+.table tbody tr.wellEv {
+  background-color: darkseagreen;
+}
+
+.table tbody tr.wellOdd {
+  background-color: lightgreen;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+@media only screen and (max-width: 1200px) {
+  img {
+    float: right;
+    margin-right: 15%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  img {
+    float: right;
+    margin-right: 0%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  img {
+    float: inherit;
+  }
+
+  .main {
+    height: 500px;
+  }
+}

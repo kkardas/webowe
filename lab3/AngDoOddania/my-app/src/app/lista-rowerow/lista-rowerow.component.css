@@ -1,0 +1,30 @@
+#wiecej {
+  background-color: lightgreen;
+  color: black;
+  font-family: "Georgia", serif;
+  font-size: xx-large;
+}
+
+#mniej {
+  background-color: lightcoral;
+  color: black;
+  font-family: "Georgia", serif;
+  font-size: xx-large;
+}
+
+h2 {
+  font-family: "Georgia", serif;
+  font-size: xx-large;
+}
+
+ul li.list-group-item {
+  background-color: transparent;
+}
+
+.parallax {
+  background-image: url('/assets/rower_tlo.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
